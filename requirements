@@ -1,0 +1,19 @@
+1. Automate Get Started Page,Registration,Login,Signout
+2. Pick few data structure  topics like stacks,arrays  etc to automate. Use simple Python code in the text editor box
+Implement Data Driven for Login functionality as well as  for textbox editor
+Implement Page object Model
+Push your code to github and share the teams github link  
+Try to implement in Cucumber BDD using POM.
+Write granular test cases in Gherkin format
+Implement Cross browser Testing 
+Run through test runner
+Generate Testng reports & Allure reports.
+Run jobs in Jenkins through Github repository
+Implement utility functions
+Timeline : 3-4 weeks 
+Form a team of 3 or 4 and come up with a name
+Attend stand up meet without fail
+At least one person from the team should update their status in the call as well as in the spreadsheet shared.
+Come up with a demo after automating everything.
+Github tutorial , reference Gherkins and test cases are shared in the google drive 
+Link for ds-algo portal : https://dsportalapp.herokuapp.com/
