@@ -2,9 +2,9 @@ package com.pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class StackPage {
+public class ArraysPage {
 
-	public StackPage(WebDriver driver) {
+	public ArraysPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 	}
 

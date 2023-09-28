@@ -21,8 +21,8 @@ public class StartedPageSteps {
 	public SoftAssert softAssert=new SoftAssert();
 	public static String expected,actual;
 
-	@Given("User is on Home Page")
-	public void user_is_on_get_started_page() {
+	@Given("The User opens  DS Algo portal Page")
+	public void the_user_opens_ds_algo_portal_page() {
 
 		driver.get("https://dsportalapp.herokuapp.com/");
 		actual=driver.getCurrentUrl();
@@ -32,8 +32,8 @@ public class StartedPageSteps {
 		
 	}
 
-	@When("User click on Get Started")
-	public void user_click_on_get_started() {
+	@When("User click on Get Started button")
+	public void user_click_on_get_started_button() {
 		homePage=sgPage.clickGetStarted();
 		System.out.println("current URL is "+driver.getCurrentUrl());
 

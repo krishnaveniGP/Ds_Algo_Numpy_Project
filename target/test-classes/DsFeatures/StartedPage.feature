@@ -1,9 +1,13 @@
 Feature: Validate DSAlgo HomePage Title
 
   Background: 
-    Given User is on Home Page
-    When User click on Get Started
+    Given The User opens  DS Algo portal Page
+    When User click on Get Started button
     Then User should land on NumpyNinja HomePage
 
   Scenario: User validates the title of the HomePage
     Then user gets the Page Title as "NumpyNinja"
+    
+    
+  
+   
