@@ -68,6 +68,13 @@ public class ConfigReader {
 		return registerpageurl;
 		else throw new RuntimeException("RegisterPageurl not specified in the Config.properties file");			
 	}
+	public static String loginPage() {
+		String login_Page_Url = prop.getProperty("loginPageUrl");
+		if (login_Page_Url != null)
+			return login_Page_Url;
+		else
+			throw new RuntimeException("loginpageUrl is not specified in the Config.properties file");
+	}
 	
 	public static String excelPath()
 	{

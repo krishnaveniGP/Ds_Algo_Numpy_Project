@@ -17,6 +17,7 @@ import com.utilities.ConfigReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import junit.framework.Assert;
 
 public class HomePageSteps {
 	private StartedPage sgPage=new StartedPage(DriverFactory.getDriver());
@@ -30,41 +31,11 @@ public class HomePageSteps {
 	WebDriverWait wait;
 	String actual_PageUrl, expected_PageUrl;
 	
-	
-//	@Given("The User opens  DS Algo portal Page")
-//	public void the_user_opens_ds_algo_portal_page() {
-//
-//		driver.get("https://dsportalapp.herokuapp.com/");
-//
-//		
-//	}
-//
-//	@When("User click on Get Started button")
-//	public void user_click_on_get_started_button() {
-//		homePage=sgPage.clickGetStarted();
-//		System.out.println("current URL is "+driver.getCurrentUrl());
-//
-//	}
-
-//	@Then("User should land on NumpyNinja HomePage")
-//	public void user_should_land_on_NumpyNinja_page() {
-//		expected_PageUrl="https://dsportalapp.herokuapp.com/home";
-//		actual_PageUrl=driver.getCurrentUrl();
-//		System.out.println("current URL is "+driver.getCurrentUrl());
-//		 assertEquals(expected_PageUrl,actual_PageUrl);
-//		    
-//
-//	}
-
-//	@When("The user clicks the Get Started button")
-//	public void the_user_clicks_the_get_started_button() {
-//	    
-//	}
-
 	@Given("user is on Home Page")
 	public void user_is_on_home_page() {
+		String home_Url=driver.getCurrentUrl();
 		System.out.println("home page url is  "+driver.getCurrentUrl());
-	    
+	   assertEquals(reader.homePage(),home_Url);
 	}
 
 	@When("The user clicks on data structure dropdown before signin")
@@ -80,8 +51,10 @@ public class HomePageSteps {
 	}
 
 	@Then("The user should get the error message {string}")
-	public void the_user_should_get_the_error_message(String string) {
-	   homePage.getErr_msg();
+	public void the_user_should_get_the_error_message(String actual_ErrorMsg) {
+	   
+	   String expected_ErrorMsg=homePage.getErr_msg();
+		assertEquals(expected_ErrorMsg,actual_ErrorMsg);
 	}
 
 	@When("The user click any of the Get started link before signin {string} in home page")
@@ -91,27 +64,40 @@ public class HomePageSteps {
 
 	@When("user clicks on SignIn button he is directed to login page")
 	public void user_clicks_on_sign_in_button_he_is_directed_to_login_page() {
-		homePage.signin_Btn();
+		loginPage=homePage.signin_Btn();
+		System.out.println(driver.getCurrentUrl());
 	    
 	}
 
 	@Then("user validates the login page")
 	public void user_validates_the_login_page() {
+		actual_PageUrl=driver.getCurrentUrl();		
+		expected_PageUrl="https://dsportalapp.herokuapp.com/login";
+		assertEquals(actual_PageUrl,expected_PageUrl);
+		System.out.println("Login page check "+actual_PageUrl);
 	    
 	}
 
 	@When("user clicks on Register button he is directed to register page")
-	public void user_clicks_on_register_button_he_is_directed_to_register_page() {
+	public void user_clicks_on_register_button_he_is_directed_to_register_page() throws InterruptedException {
+	    
+	    registerPage=homePage.clickRegisterButton();
+//		  actual_PageUrl=driver.getCurrentUrl();
+//		  expected_PageUrl="https://dsportalapp.herokuapp.com/register";
 	    
 	}
 
 	@Then("user validates the register page")
 	public void user_validates_the_register_page() {
+		actual_PageUrl=driver.getCurrentUrl();		    
+		expected_PageUrl="https://dsportalapp.herokuapp.com/register";
+		assertEquals(actual_PageUrl,expected_PageUrl);
 	    
 	}
 
 	@When("The user click any of the Get started link after signin {string} in home page")
-	public void the_user_click_any_of_the_get_started_link_after_signin_in_home_page(String string) {
+	public void the_user_click_any_of_the_get_started_link_after_signin_in_home_page(String string) throws InterruptedException {
+		//homePage.getStart_Btn_After_SignIn_click(string);
 	    
 	}
 

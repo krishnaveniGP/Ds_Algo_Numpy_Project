@@ -26,7 +26,7 @@ public class HomePage {
 		PageFactory.initElements(rdriver, this);
 	}	
 			 
-			
+	
 			//@FindBy(xpath="//div[@class='dropdown-menu show']/a")private WebElement menu_Options; 
 			@FindBy(xpath="//div[@class='alert alert-primary']")private WebElement error_msg;
 			@FindBy(xpath="//a[contains(text(),'Data Structures')]")private WebElement menuDropdown;
@@ -39,7 +39,8 @@ public class HomePage {
 			@FindBy(xpath="//a[@href='linked-list']") private WebElement linkedGet_startBtn;
 			@FindBy(xpath = "//h5[text()='Stack']/..//a")private WebElement stackgetstart;
 			@FindBy(xpath = "//h5[text()='Tree']/..//a")private WebElement treegetstart;
-			
+			@FindBy(xpath="//a[contains(text(),'Sign out')]")private WebElement signOut;
+			@FindBy(xpath="//div[@role='alert']") WebElement logout_Alert_msg;
 			
 			public void clickDropDownMenu()
 			{
@@ -118,7 +119,7 @@ public class HomePage {
 				return new SignInPage(driver);
 			}
 			
-			public RegistrationPage register_Btn() throws InterruptedException
+			public RegistrationPage clickRegisterButton() throws InterruptedException
 			{   Thread.sleep(3000);
 				register.click();		
 				return new RegistrationPage(driver);
@@ -127,7 +128,7 @@ public class HomePage {
 			public void menuDropDown() {
 				menuDropdown.click();
 			}
-			public void getStartBtn_click(String option)throws InterruptedException
+			public void getStart_Btn_After_SignIn_click(String option)throws InterruptedException
 			{	  
 			
 			// new WebDriverWait(driver,Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOf(optlst));
@@ -143,7 +144,21 @@ public class HomePage {
 			
 			 
 		   }
-			
+			public String logged_In_message()
+			{
+				String logMsg=signInAlert.getText();
+				
+				return logMsg;
+				
+			}
+			public String click_Log_Out()
+			{
+				signOut.click();
+				String logout_Msg=logout_Alert_msg.getText();
+				return logout_Msg;
+				
+				
+			}
 		}
 	
 

@@ -7,7 +7,3 @@ Feature: Validate DSAlgo HomePage Title
 
   Scenario: User validates the title of the HomePage
     Then user gets the Page Title as "NumpyNinja"
-    
-    
-  
-   

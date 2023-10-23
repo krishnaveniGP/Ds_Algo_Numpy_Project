@@ -3,14 +3,18 @@ package com.driverFactory;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 	public WebDriver driver;
+	public WebDriverWait wait;
 
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
@@ -47,4 +51,9 @@ public class DriverFactory {
 		return tlDriver.get();
 
 }
+	public void explict_Wait(WebElement element)
+	{
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		
+	}
 }
