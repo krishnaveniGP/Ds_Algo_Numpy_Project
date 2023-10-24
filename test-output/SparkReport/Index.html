@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 23, 2023 10:36:10 AM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 23, 2023 12:23:42 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 23, 2023 10:36:10 AM</h3>
+<h3>Oct 23, 2023 12:23:42 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 23, 2023 10:40:25 AM</h3>
+<h3>Oct 23, 2023 12:28:27 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Launch Browser and Test Home Page":111.543,"Registration verification and validation":90.523,"Login Action":51.497,"Validate DSAlgo HomePage Title":3.237,"login feature":0
+"Launch Browser and Test Home Page":136.867,"Registration verification and validation":90.011,"Login Action":56.703,"Validate DSAlgo HomePage Title":3.872,"login feature":0
 };
 </script>
 <div class="row">
@@ -177,15 +177,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@RegisterPageTest</td>
-<td>13</td>
+<td>@Login</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@Login</td>
+<td>@tag</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -201,14 +201,6 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@logout</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>@login</td>
 <td>0</td>
 <td>1</td>
@@ -217,8 +209,16 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>@tag</td>
-<td>1</td>
+<td>@RegisterPageTest</td>
+<td>13</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@HomePageTest</td>
+<td>22</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -233,16 +233,16 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@RegisterUrl</td>
-<td>7</td>
+<td>@logout</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@HomePageTest</td>
-<td>22</td>
+<td>@RegisterUrl</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -320,7 +320,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@RegisterPageTest</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@scenario1</a><a class="dropdown-item" href="#">@logout</a><a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@tag</a><a class="dropdown-item" href="#">@logIn</a><a class="dropdown-item" href="#">@RegisterUrl</a><a class="dropdown-item" href="#">@HomePageTest</a>
+<a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@tag</a><a class="dropdown-item" href="#">@scenario1</a><a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@RegisterPageTest</a><a class="dropdown-item" href="#">@HomePageTest</a><a class="dropdown-item" href="#">@logIn</a><a class="dropdown-item" href="#">@logout</a><a class="dropdown-item" href="#">@RegisterUrl</a>
 </ul>
 </li>
 </ul>
@@ -333,7 +333,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Launch Browser and Test Home Page</p>
             <p class="text-sm">
-              <span>10:36:11 AM</span> / <span>00:01:51:543</span>
+              <span>12:23:43 PM</span> / <span>00:02:16:867</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -342,9 +342,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Launch Browser and Test Home Page</h5>
-<span class='badge badge-success'>10.23.2023 10:36:11 AM</span>
-<span class='badge badge-danger'>10.23.2023 10:38:03 AM</span>
-<span class='badge badge-default'>00:01:51:543</span>
+<span class='badge badge-success'>10.23.2023 12:23:43 PM</span>
+<span class='badge badge-danger'>10.23.2023 12:26:00 PM</span>
+<span class='badge badge-default'>00:02:16:867</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1172,7 +1172,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Registration verification and validation</p>
             <p class="text-sm">
-              <span>10:38:03 AM</span> / <span>00:01:30:523</span>
+              <span>12:26:00 PM</span> / <span>00:01:30:011</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1181,9 +1181,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Registration verification and validation</h5>
-<span class='badge badge-success'>10.23.2023 10:38:03 AM</span>
-<span class='badge badge-danger'>10.23.2023 10:39:33 AM</span>
-<span class='badge badge-default'>00:01:30:523</span>
+<span class='badge badge-success'>10.23.2023 12:26:00 PM</span>
+<span class='badge badge-danger'>10.23.2023 12:27:30 PM</span>
+<span class='badge badge-default'>00:01:30:011</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=209</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1680,7 +1680,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login Action</p>
             <p class="text-sm">
-              <span>10:39:33 AM</span> / <span>00:00:51:497</span>
+              <span>12:27:30 PM</span> / <span>00:00:56:703</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -1689,9 +1689,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Login Action</h5>
-<span class='badge badge-success'>10.23.2023 10:39:33 AM</span>
-<span class='badge badge-danger'>10.23.2023 10:40:25 AM</span>
-<span class='badge badge-default'>00:00:51:497</span>
+<span class='badge badge-success'>10.23.2023 12:27:30 PM</span>
+<span class='badge badge-danger'>10.23.2023 12:28:27 PM</span>
+<span class='badge badge-default'>00:00:56:703</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=329</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -1976,9 +1976,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9cf55fdcaa5d0e956b1cc2f14c5f7f88, findElement {using=xpath, value=//a[text()='Sign in']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\krish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62034}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62034/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
+Command: [2ddb290db98d02ff71a0d16a8858ed55, findElement {using=xpath, value=//a[text()='Sign in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.71, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\krish\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50686}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50686/devtoo..., se:cdpVersion: 118.0.5993.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ddb290db98d02ff71a0d16a8858ed55
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -2130,7 +2130,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
           <div class="test-detail">
             <p class="name">Validate DSAlgo HomePage Title</p>
             <p class="text-sm">
-              <span>10:40:14 AM</span> / <span>00:00:03:237</span>
+              <span>12:28:16 PM</span> / <span>00:00:03:872</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2139,9 +2139,9 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Validate DSAlgo HomePage Title</h5>
-<span class='badge badge-success'>10.23.2023 10:40:14 AM</span>
-<span class='badge badge-danger'>10.23.2023 10:40:17 AM</span>
-<span class='badge badge-default'>00:00:03:237</span>
+<span class='badge badge-success'>10.23.2023 12:28:16 PM</span>
+<span class='badge badge-danger'>10.23.2023 12:28:20 PM</span>
+<span class='badge badge-default'>00:00:03:872</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=421</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -2191,7 +2191,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
           <div class="test-detail">
             <p class="name">login feature</p>
             <p class="text-sm">
-              <span>10:40:17 AM</span> / <span>00:00:00:000</span>
+              <span>12:28:20 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2200,8 +2200,8 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">login feature</h5>
-<span class='badge badge-success'>10.23.2023 10:40:17 AM</span>
-<span class='badge badge-danger'>10.23.2023 10:40:17 AM</span>
+<span class='badge badge-success'>10.23.2023 12:28:20 PM</span>
+<span class='badge badge-danger'>10.23.2023 12:28:20 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=430</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
@@ -2232,162 +2232,6 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>13</span>
-</span>
-<p class="name">@RegisterPageTest</p>
-<p class="duration text-sm">13 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@RegisterPageTest</h4>
-<span status="pass" class='badge log pass-bg'>13 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:03 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='210'>To verify Register Form with Empty fields</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with Empty fields</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='219'>The user is presented with error message for empty fields below password textbox</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.The user is presented with error message for empty fields below password textbox</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:16 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='228'>The user is presented with error message for empty fields below username textbox</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.The user is presented with error message for empty fields below username textbox</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:23 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='237'>The user is presented with error message for empty fields above Password Confirmation textbox</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.The user is presented with error message for empty fields above Password Confirmation textbox</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:30 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='246'>To verify Register Form with username and password only</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with username and password only</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:37 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='256'>To verify Register Form with invalid Credentials</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:44 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='265'>To verify Register Form with invalid Credentials</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:50 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='274'>To verify Register Form with invalid Credentials</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:57 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='283'>To verify Register Form with invalid Credentials</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:05 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='292'>To verify Register Form with invalid Credentials</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:11 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='301'>To verify Register Form with invalid Credentials</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:18 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='310'>To verify Register Form with invalid Credentials</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:25 AM</td>
-<td>
-<a href="#" class="linked" test-id='209' id='320'>to register with all the data</a>
-<div class="">
-<span class="badge badge-default">Registration verification and validation.to register with all the data</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">@Login</p>
@@ -2409,169 +2253,11 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:25 AM</td>
+<td>12:25:17 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='127'>User is on Home page and Clicks on Signin</a>
 <div class="">
 <span class="badge badge-default">Launch Browser and Test Home Page.User is on Home page and Clicks on Signin</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>6</span>
-</span>
-<p class="name">@scenario1</p>
-<p class="duration text-sm">6 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@scenario1</h4>
-<span status="pass" class='badge log pass-bg'>6 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:11 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:21 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='13'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:29 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='23'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:36 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='33'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:43 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='43'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:51 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='53'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@logout</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@logout</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:10 AM</td>
-<td>
-<a href="#" class="linked" test-id='329' id='413'>Successful LogOut</a>
-<div class="">
-<span class="badge badge-default">Login Action.Successful LogOut</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@login</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@login</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>10:40:17 AM</td>
-<td>
-<a href="#" class="linked" test-id='329' id='431'>User Login with valid "queen" and "ninjaqueen"</a>
-<div class="">
-<span class="badge badge-default">Login Action.User Login with valid "queen" and "ninjaqueen"</span>
 </div>
 </td>
 </tr>
@@ -2603,11 +2289,535 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:38:03 AM</td>
+<td>12:26:00 PM</td>
 <td>
 <a href="#" class="linked" test-id='209' id='210'>To verify Register Form with Empty fields</a>
 <div class="">
 <span class="badge badge-default">Registration verification and validation.To verify Register Form with Empty fields</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@scenario1</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@scenario1</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:23:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:23:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@login</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:28:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='329' id='431'>User Login with valid "queen" and "ninjaqueen"</a>
+<div class="">
+<span class="badge badge-default">Login Action.User Login with valid "queen" and "ninjaqueen"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>13</span>
+</span>
+<p class="name">@RegisterPageTest</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@RegisterPageTest</h4>
+<span status="pass" class='badge log pass-bg'>13 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='210'>To verify Register Form with Empty fields</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with Empty fields</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:08 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='219'>The user is presented with error message for empty fields below password textbox</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.The user is presented with error message for empty fields below password textbox</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='228'>The user is presented with error message for empty fields below username textbox</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.The user is presented with error message for empty fields below username textbox</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:21 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='237'>The user is presented with error message for empty fields above Password Confirmation textbox</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.The user is presented with error message for empty fields above Password Confirmation textbox</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='246'>To verify Register Form with username and password only</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with username and password only</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='256'>To verify Register Form with invalid Credentials</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='265'>To verify Register Form with invalid Credentials</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='274'>To verify Register Form with invalid Credentials</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:26:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='283'>To verify Register Form with invalid Credentials</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:27:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='292'>To verify Register Form with invalid Credentials</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:27:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='301'>To verify Register Form with invalid Credentials</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:27:16 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='310'>To verify Register Form with invalid Credentials</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.To verify Register Form with invalid Credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:27:23 PM</td>
+<td>
+<a href="#" class="linked" test-id='209' id='320'>to register with all the data</a>
+<div class="">
+<span class="badge badge-default">Registration verification and validation.to register with all the data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>22</span>
+</span>
+<p class="name">@HomePageTest</p>
+<p class="duration text-sm">22 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@HomePageTest</h4>
+<span status="pass" class='badge log pass-bg'>22 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:23:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:23:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='64'>User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='73'>User is on Home Page and clicks on any getStarted link "Arrays" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Arrays" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='82'>User is on Home Page and clicks on any getStarted link "Linked List" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Linked List" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:24:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='91'>User is on Home Page and clicks on any getStarted link "Stack" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Stack" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>User is on Home Page and clicks on any getStarted link "Queue" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Queue" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='109'>User is on Home Page and clicks on any getStarted link "Tree" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Tree" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='118'>User is on Home Page and clicks on any getStarted link "Graph" without sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Graph" without sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:17 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='127'>User is on Home page and Clicks on Signin</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home page and Clicks on Signin</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='136'>User is on Home page and Clicks on Register</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home page and Clicks on Register</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='146'>User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" with sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" with sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:34 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='155'>User is on Home Page and clicks on any getStarted link "Arrays" with sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Arrays" with sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='164'>User is on Home Page and clicks on any getStarted link "Linked List" with sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Linked List" with sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='173'>User is on Home Page and clicks on any getStarted link "Stack" with sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Stack" with sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='182'>User is on Home Page and clicks on any getStarted link "Queue" with sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Queue" with sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='191'>User is on Home Page and clicks on any getStarted link "Tree" with sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Tree" with sign in</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:25:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='200'>User is on Home Page and clicks on any getStarted link "Graph" with sign in</a>
+<div class="">
+<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Graph" with sign in</span>
 </div>
 </td>
 </tr>
@@ -2639,7 +2849,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:33 AM</td>
+<td>12:27:30 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='330'>User is on Home page and Clicks on Signins</a>
 <div class="">
@@ -2649,7 +2859,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:37 AM</td>
+<td>12:27:34 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='339'>To verify SignIn with Empty fields</a>
 <div class="">
@@ -2659,7 +2869,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:40 AM</td>
+<td>12:27:39 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='348'>User is on Home page and Clicks on Register</a>
 <div class="">
@@ -2669,7 +2879,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:47 AM</td>
+<td>12:27:46 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='358'>To verify SignIn with invalid "abcdefgh" and "zxyu1234"</a>
 <div class="">
@@ -2679,7 +2889,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:51 AM</td>
+<td>12:27:51 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='367'>To verify SignIn with invalid "asdfger" and "@@@@"</a>
 <div class="">
@@ -2689,7 +2899,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:55 AM</td>
+<td>12:27:55 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='376'>To verify SignIn with invalid "ER@$" and "sdkfsk12"</a>
 <div class="">
@@ -2699,7 +2909,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:39:59 AM</td>
+<td>12:27:59 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='386'>User Login with valid "queen" and "ninjaqueen"</a>
 <div class="">
@@ -2709,7 +2919,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:03 AM</td>
+<td>12:28:03 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='395'>To verify SignIn with username only</a>
 <div class="">
@@ -2719,7 +2929,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:06 AM</td>
+<td>12:28:07 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='404'>To verify SignIn with password only</a>
 <div class="">
@@ -2729,7 +2939,43 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:40:10 AM</td>
+<td>12:28:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='329' id='413'>Successful LogOut</a>
+<div class="">
+<span class="badge badge-default">Login Action.Successful LogOut</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@logout</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@logout</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:28:11 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='413'>Successful LogOut</a>
 <div class="">
@@ -2765,7 +3011,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:35 AM</td>
+<td>12:25:29 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='146'>User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" with sign in</a>
 <div class="">
@@ -2775,7 +3021,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:38 AM</td>
+<td>12:25:34 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='155'>User is on Home Page and clicks on any getStarted link "Arrays" with sign in</a>
 <div class="">
@@ -2785,7 +3031,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:42 AM</td>
+<td>12:25:38 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='164'>User is on Home Page and clicks on any getStarted link "Linked List" with sign in</a>
 <div class="">
@@ -2795,7 +3041,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:50 AM</td>
+<td>12:25:43 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='173'>User is on Home Page and clicks on any getStarted link "Stack" with sign in</a>
 <div class="">
@@ -2805,7 +3051,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:53 AM</td>
+<td>12:25:47 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='182'>User is on Home Page and clicks on any getStarted link "Queue" with sign in</a>
 <div class="">
@@ -2815,7 +3061,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:56 AM</td>
+<td>12:25:52 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='191'>User is on Home Page and clicks on any getStarted link "Tree" with sign in</a>
 <div class="">
@@ -2825,253 +3071,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:59 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='200'>User is on Home Page and clicks on any getStarted link "Graph" with sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Graph" with sign in</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>22</span>
-</span>
-<p class="name">@HomePageTest</p>
-<p class="duration text-sm">22 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@HomePageTest</h4>
-<span status="pass" class='badge log pass-bg'>22 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:11 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:21 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='13'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:29 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='23'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:36 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='33'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:43 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='43'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:51 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='53'>User is on Home Page and clicks on any dropdown "<value>" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any dropdown "<value>" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:36:58 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='64'>User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:02 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='73'>User is on Home Page and clicks on any getStarted link "Arrays" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Arrays" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:06 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='82'>User is on Home Page and clicks on any getStarted link "Linked List" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Linked List" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:09 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='91'>User is on Home Page and clicks on any getStarted link "Stack" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Stack" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:13 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='100'>User is on Home Page and clicks on any getStarted link "Queue" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Queue" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:17 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='109'>User is on Home Page and clicks on any getStarted link "Tree" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Tree" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:21 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='118'>User is on Home Page and clicks on any getStarted link "Graph" without sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Graph" without sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:25 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='127'>User is on Home page and Clicks on Signin</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home page and Clicks on Signin</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:28 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='136'>User is on Home page and Clicks on Register</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home page and Clicks on Register</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:35 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='146'>User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" with sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Data Structures-Introduction" with sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:38 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='155'>User is on Home Page and clicks on any getStarted link "Arrays" with sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Arrays" with sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:42 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='164'>User is on Home Page and clicks on any getStarted link "Linked List" with sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Linked List" with sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:50 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='173'>User is on Home Page and clicks on any getStarted link "Stack" with sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Stack" with sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:53 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='182'>User is on Home Page and clicks on any getStarted link "Queue" with sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Queue" with sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:56 AM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='191'>User is on Home Page and clicks on any getStarted link "Tree" with sign in</a>
-<div class="">
-<span class="badge badge-default">Launch Browser and Test Home Page.User is on Home Page and clicks on any getStarted link "Tree" with sign in</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>10:37:59 AM</td>
+<td>12:25:56 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='200'>User is on Home Page and clicks on any getStarted link "Graph" with sign in</a>
 <div class="">
@@ -3123,7 +3123,7 @@ Session ID: 9cf55fdcaa5d0e956b1cc2f14c5f7f88
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>10:40:19 AM</td>
+<td>12:28:22 PM</td>
 <td>
 <a href="#" class="linked" test-id='329' id='434'>Given User is on Login page</a>
 <div class="">
