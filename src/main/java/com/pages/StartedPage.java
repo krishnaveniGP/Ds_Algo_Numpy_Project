@@ -5,9 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.driverFactory.DriverFactory;
+
 public class StartedPage {
 	
-	 WebDriver driver;
+	 WebDriver driver=DriverFactory.getDriver();
+	 HomePage hpage=new HomePage(driver);
 
 	   public StartedPage(WebDriver rdriver)
 	     {
@@ -16,7 +19,7 @@ public class StartedPage {
 	     }
 
 	@FindBy(xpath="//button[contains(text(),'Get Started')]") WebElement getStarted;
-	@FindBy(xpath="//title") WebElement title;
+	//@FindBy(xpath="//title") WebElement title;
 	
 	
 	
@@ -32,10 +35,11 @@ public class StartedPage {
 	
 	public String getTitle()
 	{
-		String actul_title=title.getText();
+		String actul_title=driver.getTitle();
 		
+		
+		//String actul_title=hpage.getTitle();
 		return actul_title;
-		
 		
 	}
 

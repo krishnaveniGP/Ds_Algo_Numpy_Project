@@ -36,6 +36,13 @@
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core   7.13.0-->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>${cucumber.version}</version>
+</dependency>
+
 <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-api</artifactId>
@@ -73,11 +80,13 @@
             <artifactId>extentreports</artifactId>
             <version>5.0.8</version>
         </dependency>
+
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>gherkin</artifactId>
-    <version>26.0.3</version>
+    <version>26.2.0</version>
 </dependency>
+
 
         <dependency>
             <groupId>com.aventstack</groupId>

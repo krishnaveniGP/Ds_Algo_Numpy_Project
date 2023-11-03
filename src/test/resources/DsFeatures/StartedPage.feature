@@ -1,6 +1,7 @@
 Feature: Validate DSAlgo HomePage Title
 
-  Background: 
+  #Background: 
+  Scenario: User launches the Dsalgo portal Page
     Given The User opens  DS Algo portal Page
     When User click on Get Started button
     Then User should land on NumpyNinja HomePage

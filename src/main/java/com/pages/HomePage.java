@@ -27,7 +27,7 @@ public class HomePage {
 	}	
 			 
 	
-			//@FindBy(xpath="//div[@class='dropdown-menu show']/a")private WebElement menu_Options; 
+			
 			@FindBy(xpath="//div[@class='alert alert-primary']")private WebElement error_msg;
 			@FindBy(xpath="//a[contains(text(),'Data Structures')]")private WebElement menuDropdown;
 			
@@ -36,19 +36,43 @@ public class HomePage {
 			@FindBy(xpath="//a[text()=' Register ']")private WebElement register;
 			@FindBy(xpath = "//div[contains(@class,'alert ')]")private WebElement signInAlert;
 			@FindBy(xpath = "//div/h5[contains(text(),'Array')]/../a")private WebElement arrayGetStart;
-			@FindBy(xpath="//a[@href='linked-list']") private WebElement linkedGet_startBtn;
-			@FindBy(xpath = "//h5[text()='Stack']/..//a")private WebElement stackgetstart;
-			@FindBy(xpath = "//h5[text()='Tree']/..//a")private WebElement treegetstart;
+			@FindBy(xpath="//a[@href='linked-list']") private WebElement linked_Get_StartBtn;
+			@FindBy(xpath = "//h5[text()='Stack']/..//a")private WebElement stack_Get_Start;
+			@FindBy(xpath = "//h5[text()='Tree']/..//a")private WebElement tree_Get_Start;
 			@FindBy(xpath="//a[contains(text(),'Sign out')]")private WebElement signOut;
 			@FindBy(xpath="//div[@role='alert']") WebElement logout_Alert_msg;
-			
+			@FindBy(xpath = "//h5[text()='Data Structures-Introduction']/..//a")private WebElement datatructure_Start;			
+			@FindBy(xpath = "//h5[text()='Queue']/..//a")private WebElement Queue_Start;
+			@FindBy(xpath = "//h5[text()='Graph']/..//a")private WebElement Graph_Start;
 			public void clickDropDownMenu()
 			{
 				
 				menuDropdown.click();
 				
 			}
-			public ArraysPage array_getstart()
+			public DataStructuresPage click_data_Structure_GetStarted()
+			{
+				datatructure_Start.click();
+				return new DataStructuresPage(driver);
+				
+				
+			}
+			public QueuePage click_Queue_start()
+			{
+				
+				Queue_Start.click();
+				return new QueuePage(driver);
+			}
+			public GraphPage click_Graph_start()
+			{
+				
+				Queue_Start.click();
+				return new GraphPage(driver);
+			}
+			
+			
+			
+			public ArraysPage click_array_getstart()
 			 {
 				//new WebDriverWait(driver,Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(arraygetstart));
 				arrayGetStart.click();
@@ -56,25 +80,25 @@ public class HomePage {
 			
 			
 			
-			 public StackPage stack_getstart()
+			 public StackPage click_Stack_getstart()
 			 {
 				//new WebDriverWait(driver,Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(arraygetstart));
-				stackgetstart.click();
+				 stack_Get_Start.click();
 				return new StackPage(driver); 
 			 }
-			 public TreePage tree_getstart()
+			 public TreePage click_Tree_getstart()
 			 {
 				//new WebDriverWait(driver,Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(arraygetstart));
-				treegetstart.click();
+				 tree_Get_Start.click();
 				return new TreePage(driver); 
 			 }
 			public void homepage() {
 				driver.get(homePageurl);		
 			}	
 			
-			public LinkedListPage linked_getStart() throws InterruptedException
+			public LinkedListPage click_Linked_getStart() throws InterruptedException
 			{    Thread.sleep(3000);
-			linkedGet_startBtn.click();
+			linked_Get_StartBtn.click();
 				return new LinkedListPage(driver);		
 			}
 			

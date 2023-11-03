@@ -52,11 +52,12 @@ public class StartedPageSteps {
 	@Then("user gets the Page Title as {string}")
 	public void user_gets_the_page_title_as(String string) {
 		expected=string;
-
-		actual=driver.getTitle();
-		
+		actual=sgPage.getTitle();
+		//actual=driver.getTitle();
+		System.out.println("expected is "+expected);
 		System.out.println("actual title is "+actual);
-		assertEquals(expected, actual);
+		assertEquals(actual,expected);
+		
 
 	}
 
