@@ -1,33 +1,26 @@
 package stepDefintions;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.List;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.testng.asserts.SoftAssert;
 
 import com.driverFactory.DriverFactory;
 import com.pages.DataStructuresPage;
 import com.pages.HomePage;
-import com.pages.RegistrationPage;
-import com.pages.SignInPage;
-import com.pages.StartedPage;
-import com.utilities.ConfigReader;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class DataStructuresSteps {
+public class ZDataStructuresSteps {
 	WebDriver driver = DriverFactory.getDriver();
 
-	private StartedPage sgPage = new StartedPage(DriverFactory.getDriver());
+	//private StartedPage sgPage = new StartedPage(DriverFactory.getDriver());
 	private HomePage homePage = new HomePage(DriverFactory.getDriver());
-	private SignInPage loginPage = new SignInPage(DriverFactory.getDriver());
-	private RegistrationPage registerPage = new RegistrationPage(DriverFactory.getDriver());
+	//private SignInPage loginPage = new SignInPage(DriverFactory.getDriver());
+	//private RegistrationPage registerPage = new RegistrationPage(DriverFactory.getDriver());
 
-	private ConfigReader reader = new ConfigReader();
+	//private ConfigReader reader = new ConfigReader();
 	private DataStructuresPage dataPage = new DataStructuresPage(driver);
 	String timpe_page_actual_title;
 	String click_here_page_title;
@@ -63,11 +56,20 @@ public class DataStructuresSteps {
 		System.out.println("click here title is  " + click_here_page_title);
 	}
 
-	@Then("Then It should navigate to corresponding page with Title {string}")
+	@Then("It should navigate to corresponding page with Title {string}")
 	public void it_should_navigate_to_corresponding_page_with_Title(String string) {
 		Assert.assertEquals(click_here_page_title, string);
 
 	}
+	
+
+//	@Then("It should navigate to corresponding page with Title {string}")
+//	public void it_should_navigate_to_corresponding_page_with_title(String string) {
+//	    
+//	}
+
+
+
 	// Then It should navigate to corresponding page with title "Assessment"
 
 	@When("user enter the Python code")
@@ -91,21 +93,22 @@ public class DataStructuresSteps {
 	}
 
 	@When("user clicks run button")
-	public void user_clicks_run_button() {
-		dataPage.click_Run_Button();
+	public void user_clicks_run_button() throws InterruptedException {
+		actualAlertText=dataPage.handling_Alert();
 
 	}
 
 	@Then("user should get the alert message with text {string}")
-	public void user_should_get_the_alert_message_with_text(String expectedAlertText) {
+	public void user_should_get_the_alert_message_with_text(String expectedAlertText) throws InterruptedException {
 
-		actualAlertText = dataPage.handling_Alert();
-		Assert.assertEquals(actualAlertText, expectedAlertText, "Success");
+		//actualAlertText = dataPage.handling_Alert();
+		Assert.assertEquals(expectedAlertText,actualAlertText);
 	}
 
 	@Then("user accepts the error")
-	public void user_accepts_the_error() {
-		dataPage.Is_AlertPresent();
+	public void user_accepts_the_error() throws InterruptedException {
+		//dataPage.Is_AlertPresent();
+		System.out.println(driver.getCurrentUrl());
 
 	}
 

@@ -26,8 +26,8 @@ String alert_msg;
 	
 	@FindBy(xpath="//a[contains(text(),'Time Complexity')]") WebElement time_Complixity;
 	@FindBy(xpath="//a[contains(text(),'Try here>>>')]") WebElement try_Here;
-	@FindBy(xpath="//pre[@class=' CodeMirror-line ']") WebElement pyhthon_code_textEditer;
-	@FindBy(xpath="//button[@onclick='runit()']") WebElement run_button;
+	@FindBy(xpath="//div[@class='CodeMirror-scroll']") WebElement pyhthon_code_textEditer;
+	@FindBy(xpath="//button[@type='button']") WebElement run_button;
 //	@FindBy(xpath="") WebElement a;
 //	@FindBy(xpath="") WebElement a;
 //	@FindBy(xpath="") WebElement a;
@@ -63,25 +63,29 @@ String alert_msg;
 	}
 	public void click_Run_Button()
 	{
+		pageUtil.explicit_wait(rdriver,run_button);
 		run_button.click();
 		rdriver.navigate().to(homePage_url);
 		
 	}
-	public String handling_Alert()
+	public String handling_Alert() throws InterruptedException
 	{
+		
 		run_button.click();
+		Thread.sleep(2000);
 		String alertMsg=Is_AlertPresent();
 		System.out.println("alert message is "+alertMsg);
-		rdriver.navigate().to(homePage_url);
+		//rdriver.navigate().to(homePage_url);
 		return alertMsg;
 		
 	}
 	
-	public String Is_AlertPresent()
+	public String Is_AlertPresent() throws InterruptedException
 	{
 		boolean flag=false;
 		try
 		{
+			Thread.sleep(2000);
 		 alert=rdriver.switchTo().alert();
 		 alert_msg=alert.getText();
 		 alert.accept();

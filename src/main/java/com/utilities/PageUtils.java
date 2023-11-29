@@ -27,14 +27,14 @@ public class PageUtils {
 		jse.executeScript("window.scrollBy(0,500)", e);
 	}
 
-	public void implicit_wait(WebDriver driver, WebElement e) {
+	public void explicit_wait(WebDriver driver, WebElement e) {
 		new WebDriverWait(driver, Duration.ofSeconds(40)).until(ExpectedConditions.visibilityOf(e));
 	}
 
 	public void menu_click(WebDriver driver, List<WebElement> e, String option) {
 		scrolldown(driver);
 		for (WebElement item : e) {
-			implicit_wait(driver, item);
+			explicit_wait(driver, item);
 			if (item.getText().equalsIgnoreCase(option)) {
 				item.click();
 				break;
