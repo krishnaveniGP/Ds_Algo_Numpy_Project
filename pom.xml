@@ -21,7 +21,14 @@
 
 	
   </properties>
-
+<repositories>
+        <repository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Repository</name>
+            <url>http://repository.mulesoft.org/releases/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
   <dependencies>
     <dependency>
 			<groupId>io.cucumber</groupId>

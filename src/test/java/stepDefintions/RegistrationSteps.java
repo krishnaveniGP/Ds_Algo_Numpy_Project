@@ -24,12 +24,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class RegistrationSteps {
-
-	private StartedPage sgPage = new StartedPage(DriverFactory.getDriver());
-	private HomePage homePage = new HomePage(DriverFactory.getDriver());
-	private SignInPage loginPage = new SignInPage(DriverFactory.getDriver());
-	private RegistrationPage registerPage = new RegistrationPage(DriverFactory.getDriver());
 	private WebDriver driver = DriverFactory.getDriver();
+	private HomePage homePage = new HomePage(driver);
+	private SignInPage loginPage = new SignInPage(driver);
+	private RegistrationPage registerPage = new RegistrationPage(driver);
+	
 	private ConfigReader reader = new ConfigReader();
 	Properties prop;
 	WebDriverWait wait;

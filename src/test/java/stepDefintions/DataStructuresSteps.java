@@ -12,13 +12,13 @@ import com.pages.HomePage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class ZDataStructuresSteps {
+public class DataStructuresSteps {
 	WebDriver driver = DriverFactory.getDriver();
 
-	//private StartedPage sgPage = new StartedPage(DriverFactory.getDriver());
-	private HomePage homePage = new HomePage(DriverFactory.getDriver());
-	//private SignInPage loginPage = new SignInPage(DriverFactory.getDriver());
-	//private RegistrationPage registerPage = new RegistrationPage(DriverFactory.getDriver());
+	//private StartedPage sgPage = new StartedPage(driver);
+	private HomePage homePage = new HomePage(driver);
+	//private SignInPage loginPage = new SignInPage(driver);
+	//private RegistrationPage registerPage = new RegistrationPage(driver);
 
 	//private ConfigReader reader = new ConfigReader();
 	private DataStructuresPage dataPage = new DataStructuresPage(driver);

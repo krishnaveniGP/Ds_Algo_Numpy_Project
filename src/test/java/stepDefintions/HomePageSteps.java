@@ -20,12 +20,13 @@ import io.cucumber.java.en.When;
 import junit.framework.Assert;
 
 public class HomePageSteps {
-	private StartedPage sgPage=new StartedPage(DriverFactory.getDriver());
-	private HomePage homePage=new HomePage(DriverFactory.getDriver());
-	private SignInPage loginPage=new SignInPage(DriverFactory.getDriver());
-	private RegistrationPage registerPage=new RegistrationPage(DriverFactory.getDriver());
 	private WebDriver driver=DriverFactory.getDriver();
-	private ConfigReader reader=new ConfigReader();
+	private StartedPage sgPage=new StartedPage(driver);
+	private HomePage homePage=new HomePage(driver);
+	private SignInPage loginPage=new SignInPage(driver);
+	private RegistrationPage registerPage=new RegistrationPage(driver);
+	
+	public ConfigReader reader=new ConfigReader();
 	
 	Properties prop;
 	WebDriverWait wait;
@@ -35,7 +36,7 @@ public class HomePageSteps {
 	public void user_is_on_home_page() {
 		String home_Url=driver.getCurrentUrl();
 		System.out.println("home page url is  "+driver.getCurrentUrl());
-	   assertEquals(reader.homePage(),home_Url);
+	   assertEquals(ConfigReader.homePage(),home_Url);
 	}
 
 	@When("The user clicks on data structure dropdown before signin")
@@ -81,7 +82,7 @@ public class HomePageSteps {
 	@When("user clicks on Register button he is directed to register page")
 	public void user_clicks_on_register_button_he_is_directed_to_register_page() throws InterruptedException {
 	    
-	    registerPage=homePage.clickRegisterButton();
+		registerPage=homePage.clickRegisterButton();
 //		  actual_PageUrl=driver.getCurrentUrl();
 //		  expected_PageUrl="https://dsportalapp.herokuapp.com/register";
 	    

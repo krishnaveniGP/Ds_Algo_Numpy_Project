@@ -17,9 +17,7 @@ import io.cucumber.java.en.When;
 
 public class SignInSteps {
 	private WebDriver driver=DriverFactory.getDriver();
-	private StartedPage stPage=new StartedPage(driver);
 	private HomePage homePage=new HomePage(driver);
-	private RegistrationPage registerPage=new RegistrationPage(driver);
 	private ConfigReader config=new ConfigReader();
 	private SignInPage sign_In_Page=new SignInPage(driver);
 	String error="";
@@ -101,15 +99,7 @@ public class SignInSteps {
 			
 	    success=sign_In_Page.click_Successfull_Logout();
 	    
-//	    loginPage=homePage.signin_Btn();
-//		//System.out.println(driver.getCurrentUrl());
-//		String uname=config.getUserName();
-//		String pwd=config.getPassword();
-//		//System.out.println(uname +pwd);
-//		 loginPage.valid_login(uname, pwd);
-//		 result=loginPage.success_login();
-//		// System.out.println(result);
-//		  msg=loginPage.success_logout();
+
 	}
 
 	@Then("Message displayed {string}")
