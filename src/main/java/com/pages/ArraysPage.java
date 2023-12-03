@@ -88,6 +88,11 @@ public class ArraysPage {
 		driver.switchTo().alert().accept();
 		return result; 
 	}
+	public String get_Title() {
+		String title=driver.getTitle();
+		return title;
+		
+	}
 	}
 	
 	

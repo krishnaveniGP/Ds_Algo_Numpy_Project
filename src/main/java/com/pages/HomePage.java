@@ -183,6 +183,10 @@ public class HomePage {
 				
 				
 			}
+			public String getTitle() {
+				String title=driver.getTitle();
+				return title;
+			}
 		}
 	
 

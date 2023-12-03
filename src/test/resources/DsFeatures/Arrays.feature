@@ -8,9 +8,11 @@ Feature: Test Array page
     When User enters valid username "queen" and password "ninjaqueen"
     Then It should navigate to the home page with a message "You are logged in"
 
-  #Scenario: User clicks on Arrays page
-  #Given user is on Home Page
-  #When user clicks on Arrays getstarted
+  Scenario: User clicks on Arrays page
+    Given user is on Home Page
+    When user clicks on Arrays getstarted
+    Then user redirected to Arrayspage with title "Array"
+
   Scenario Outline: The user is able to navigate to all options in array page
     Given user clicks on Arrays getstarted
     When The user clicks "<options>" button

@@ -9,6 +9,7 @@ import com.driverFactory.DriverFactory;
 import com.pages.DataStructuresPage;
 import com.pages.HomePage;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -73,7 +74,7 @@ public class DataStructuresSteps {
 	// Then It should navigate to corresponding page with title "Assessment"
 
 	@When("user enter the Python code")
-	public void user_enter_the_python_code(io.cucumber.datatable.DataTable pythonCode) {
+	public void user_enter_the_python_code(DataTable pythonCode) {
 		List<String> data = pythonCode.asList();
 		dataPage.send_Python_code(data.get(0));
 
@@ -86,9 +87,9 @@ public class DataStructuresSteps {
 	}
 
 	@When("user enter the invalid Python code")
-	public void user_enter_the_invalid_python_code(io.cucumber.datatable.DataTable pythonCode) {
-		List<String> data = pythonCode.asList();
-		dataPage.send_Python_code(data.get(0));
+	public void user_enter_the_invalid_python_code(DataTable invalidCode) {
+		List<String> data1 = invalidCode.asList();
+		dataPage.send_Python_code(data1.get(0));
 
 	}
 

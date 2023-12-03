@@ -22,8 +22,9 @@ Feature: Data Structure page validation dsalgo
     When user click on Try here
     Then It should navigate to corresponding page with Title "Assessment"
     When user enter the Python code
+      | validPyhoncode                    |
       | print"DataStructure Introduction" |
-    When user clicks run button and goes to home page
+    And user clicks run button and goes to home page
 
   Scenario: User clicks on datastructure page and checks with invalid python code
     Given user is on Home Page
@@ -34,7 +35,8 @@ Feature: Data Structure page validation dsalgo
     When user click on Try here
     Then It should navigate to corresponding page with Title "Assessment"
     When user enter the invalid Python code
-      | println"DataStructure Introduction" |
-    When user clicks run button
+      | invalidPythoncode                    |
+      | printlnn"DataStructure Introduction" |
+    And user clicks run button
     Then user should get the alert message with text "SyntaxError: bad input on line 1"
     And user accepts the error

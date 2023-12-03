@@ -162,6 +162,9 @@
     <version>1.18.30</version>
     <scope>provided</scope>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
+
+
 
 
   </dependencies>
@@ -183,15 +186,37 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
-				<configuration>
+				<!-- <configuration>
 					<includes>
 						<include>**/ParallelRun.java</include>
 					</includes>
 					<parallel>methods</parallel>
 					<threadCount>4</threadCount>
 					<useUnlimitedThreads>false</useUnlimitedThreads>
-				</configuration>
+				</configuration>-->
 			</plugin>
+			
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-failsafe-plugin</artifactId>
+    <version>3.1.2</version>
+    <!-- <scope>test</scope>-->
+    <executions>
+		<execution>
+			<goals>
+				<goal>integration-test</goal>
+			</goals>
+			<configuration>
+				<includes>
+					<include>**/MyTestRunner.java</include>
+				</includes>
+				<parallel>methods</parallel>
+				<threadCount>4</threadCount>
+				<perCoreThreadCount>true</perCoreThreadCount>
+			</configuration>
+		</execution>
+	</executions>
+    </plugin>
 
 			
 
