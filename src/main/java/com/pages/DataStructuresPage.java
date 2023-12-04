@@ -80,6 +80,7 @@ String alert_msg;
 		
 	}
 	
+	
 	public String Is_AlertPresent() throws InterruptedException
 	{
 		boolean flag=true;
@@ -101,6 +102,14 @@ String alert_msg;
 		return alert_msg;
 		
 		}
+	public String click_Run_Button_with_inavalid() {
+		pageUtil.explicit_wait(rdriver,run_button);
+		run_button.click();
+		alert=rdriver.switchTo().alert();
+		 alert_msg=alert.getText();
+		 alert.accept();
+		return alert_msg;
+	}
 	
 	
 	

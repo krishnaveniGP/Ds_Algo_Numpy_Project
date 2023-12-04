@@ -12,20 +12,21 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.aventstack.extentreports.gherkin.model.Scenario;
+
 import com.driverFactory.DriverFactory;
 import com.utilities.ConfigReader;
 import com.utilities.LoggerLoad;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class HooksDS {
 	private WebDriver driver;
 	private DriverFactory driverFactory;
 	private ConfigReader configReader;
 	Properties prop;
-	
+	Scenario scenario;
 	@Before(order=0)
 	public void getProperty()
 	{
@@ -49,20 +50,21 @@ public class HooksDS {
 		LoggerLoad.info("Closing Browser");
 		driver.quit();
 	}
-	//@After(order=1)
-//	public void tearDown(Scenario scenario)
+	@After(order=1)
+	public void tearDown(Scenario scenario)
+	{
+		if(scenario.isFailed())//take ScreenShot;
+		{	
+			LoggerLoad.error("Steps Failed , Taking Screenshot");
+			String screenShotName=scenario.getName().replaceAll("", "_");
+			byte[] sourcePath=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+			 scenario.attach(sourcePath,"image/png", screenShotName);
+		}
+		
+	}
+//	public void captureScreen(Scenario scenario) 
 //	{
-//		if(((Object) scenario).isFailed())//take ScreenShot;
-//		{	
-//			LoggerLoad.error("Steps Failed , Taking Screenshot");
-//			String screenShotName=scenario.getGherkinName().replaceAll("", "_");
-//			byte[] sourcePath=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-//			((Object) scenario).attach(sourcePath,"image/png", screenShotName);
-//		}
-//		
-//	}
-//	public void captureScreen(WebDriver driver,String testname) throws IOException
-//	{
+//		System.out.println("sceanario status  "+scenario.getStatus());
 //		
 //		TakesScreenshot ts=(TakesScreenshot) driver;
 //		byte[] source=ts.getScreenshotAs(OutputType.BYTES);

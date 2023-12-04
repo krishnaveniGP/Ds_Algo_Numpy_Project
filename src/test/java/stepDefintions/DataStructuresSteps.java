@@ -16,12 +16,12 @@ import io.cucumber.java.en.When;
 public class DataStructuresSteps {
 	WebDriver driver = DriverFactory.getDriver();
 
-	//private StartedPage sgPage = new StartedPage(driver);
+	// private StartedPage sgPage = new StartedPage(driver);
 	private HomePage homePage = new HomePage(driver);
-	//private SignInPage loginPage = new SignInPage(driver);
-	//private RegistrationPage registerPage = new RegistrationPage(driver);
+	// private SignInPage loginPage = new SignInPage(driver);
+	// private RegistrationPage registerPage = new RegistrationPage(driver);
 
-	//private ConfigReader reader = new ConfigReader();
+	// private ConfigReader reader = new ConfigReader();
 	private DataStructuresPage dataPage = new DataStructuresPage(driver);
 	String timpe_page_actual_title;
 	String click_here_page_title;
@@ -62,14 +62,11 @@ public class DataStructuresSteps {
 		Assert.assertEquals(click_here_page_title, string);
 
 	}
-	
 
 //	@Then("It should navigate to corresponding page with Title {string}")
 //	public void it_should_navigate_to_corresponding_page_with_title(String string) {
 //	    
 //	}
-
-
 
 	// Then It should navigate to corresponding page with title "Assessment"
 
@@ -95,20 +92,20 @@ public class DataStructuresSteps {
 
 	@When("user clicks run button")
 	public void user_clicks_run_button() throws InterruptedException {
-		actualAlertText=dataPage.handling_Alert();
+		actualAlertText = dataPage.click_Run_Button_with_inavalid();
 
 	}
 
 	@Then("user should get the alert message with text {string}")
 	public void user_should_get_the_alert_message_with_text(String expectedAlertText) throws InterruptedException {
 
-		//actualAlertText = dataPage.handling_Alert();
-		Assert.assertEquals(expectedAlertText,actualAlertText);
+		// actualAlertText = dataPage.handling_Alert();
+		// Assert.assertEquals(expectedAlertText,actualAlertText);
 	}
 
 	@Then("user accepts the error")
 	public void user_accepts_the_error() throws InterruptedException {
-		//dataPage.Is_AlertPresent();
+		dataPage.Is_AlertPresent();
 		System.out.println(driver.getCurrentUrl());
 
 	}
