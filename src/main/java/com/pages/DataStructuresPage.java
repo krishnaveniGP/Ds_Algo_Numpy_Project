@@ -72,7 +72,7 @@ String alert_msg;
 	{
 		pageUtil.explicit_wait(rdriver,run_button);
 		run_button.click();
-		Thread.sleep(2000);
+		
 		String alertMsg=Is_AlertPresent();
 		System.out.println("alert message is "+alertMsg);
 		//rdriver.navigate().to(homePage_url);
@@ -82,7 +82,7 @@ String alert_msg;
 	
 	public String Is_AlertPresent() throws InterruptedException
 	{
-		boolean flag=false;
+		boolean flag=true;
 		try
 		{
 			Thread.sleep(2000);
