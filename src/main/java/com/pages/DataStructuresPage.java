@@ -70,7 +70,7 @@ String alert_msg;
 	}
 	public String handling_Alert() throws InterruptedException
 	{
-		
+		pageUtil.explicit_wait(rdriver,run_button);
 		run_button.click();
 		Thread.sleep(2000);
 		String alertMsg=Is_AlertPresent();
