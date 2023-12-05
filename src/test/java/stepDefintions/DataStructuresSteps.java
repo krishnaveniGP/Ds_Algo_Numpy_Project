@@ -70,7 +70,7 @@ public class DataStructuresSteps {
 
 	// Then It should navigate to corresponding page with title "Assessment"
 
-	@When("user enter the Python code")
+	@When("user enter the PythonCode")
 	public void user_enter_the_python_code(DataTable pythonCode) {
 		List<String> data = pythonCode.asList();
 		dataPage.send_Python_code(data.get(0));
@@ -82,8 +82,8 @@ public class DataStructuresSteps {
 		dataPage.click_Run_Button();
 
 	}
-
-	@When("user enter the invalid Python code")
+	
+@When("user enter the invalid PythonCode")
 	public void user_enter_the_invalid_python_code(DataTable invalidCode) {
 		List<String> data1 = invalidCode.asList();
 		dataPage.send_Python_code(data1.get(0));
@@ -92,21 +92,21 @@ public class DataStructuresSteps {
 
 	@When("user clicks run button")
 	public void user_clicks_run_button() throws InterruptedException {
-		actualAlertText = dataPage.click_Run_Button_with_inavalid();
+		actualAlertText = dataPage.handling_Alert();
 
 	}
 
 	@Then("user should get the alert message with text {string}")
 	public void user_should_get_the_alert_message_with_text(String expectedAlertText) throws InterruptedException {
 
-		// actualAlertText = dataPage.handling_Alert();
-		// Assert.assertEquals(expectedAlertText,actualAlertText);
+		 //actualAlertText = dataPage.handling_Alert();
+		 Assert.assertEquals(expectedAlertText,actualAlertText);
 	}
 
 	@Then("user accepts the error")
 	public void user_accepts_the_error() throws InterruptedException {
-		dataPage.Is_AlertPresent();
-		System.out.println(driver.getCurrentUrl());
+		dataPage.accept_Alert();
+		
 
 	}
 

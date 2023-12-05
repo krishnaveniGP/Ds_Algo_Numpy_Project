@@ -29,9 +29,10 @@ public class DriverFactory {
 			
 			
 		} else if (browser.equals("firefox")) {
-			//WebDriverManager.firefoxdriver().setup();
+			WebDriverManager.firefoxdriver().setup();
 			tlDriver.set(new FirefoxDriver());
 		} else if (browser.equals("safari")) {
+			WebDriverManager.edgedriver().setup();
 			tlDriver.set(new SafariDriver());
 		} else {
 			System.out.println("Please pass the correct browser value: " + browser);

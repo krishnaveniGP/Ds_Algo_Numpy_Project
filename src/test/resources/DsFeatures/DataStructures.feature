@@ -21,7 +21,7 @@ Feature: Data Structure page validation dsalgo
     Then It should navigate to corresponding page with title "Time Complexity"
     When user click on Try here
     Then It should navigate to corresponding page with Title "Assessment"
-    When user enter the Python code
+    When user enter the PythonCode
       | print"DataStructure Introduction" |
     And user clicks run button and goes to home page
 
@@ -33,7 +33,7 @@ Feature: Data Structure page validation dsalgo
     Then It should navigate to corresponding page with title "Time Complexity"
     When user click on Try here
     Then It should navigate to corresponding page with Title "Assessment"
-    When user enter the invalid Python code
+    When user enter the invalid PythonCode
       | printlnn"DataStructure Introduction" |
     And user clicks run button
     Then user should get the alert message with text "SyntaxError: bad input on line 1"

@@ -26,7 +26,7 @@ String alert_msg;
 	
 	@FindBy(xpath="//a[contains(text(),'Time Complexity')]") WebElement time_Complixity;
 	@FindBy(xpath="//a[contains(text(),'Try here>>>')]") WebElement try_Here;
-	@FindBy(xpath="//div[@class='CodeMirror-scroll']") WebElement pyhthon_code_textEditer;
+	@FindBy(xpath="//form/div/div/div/textarea") WebElement pyhthon_code_textEditer;
 	@FindBy(xpath="//button[@type='button']") WebElement run_button;
 //	@FindBy(xpath="") WebElement a;
 //	@FindBy(xpath="") WebElement a;
@@ -89,7 +89,7 @@ String alert_msg;
 			Thread.sleep(2000);
 		 alert=rdriver.switchTo().alert();
 		 alert_msg=alert.getText();
-		 alert.accept();
+		 //alert.accept();
 		
 		
 	}
@@ -110,7 +110,11 @@ String alert_msg;
 		 alert.accept();
 		return alert_msg;
 	}
-	
+	public void accept_Alert()
+	{
+		
+		alert.accept();
+	}
 	
 	
 
