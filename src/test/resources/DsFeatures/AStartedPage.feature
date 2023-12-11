@@ -1,3 +1,4 @@
+@PortalhomePage
 Feature: Validate DSAlgo HomePage Title
 
   #Background: 

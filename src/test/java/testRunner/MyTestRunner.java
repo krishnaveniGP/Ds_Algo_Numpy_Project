@@ -11,6 +11,7 @@ import io.cucumber.junit.Cucumber;
 				//features ="@target/rerun.txt",	
 		glue={"stepDefintions","Hooks"},
 		plugin = {"pretty",
+				"html:target/htmlreport.html",
 				"json:target/jsonfile.json",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","timeline:test-output-thread/",
 				"rerun:target/rerun.txt"},

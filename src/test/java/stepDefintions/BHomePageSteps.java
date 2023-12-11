@@ -19,7 +19,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import junit.framework.Assert;
 
-public class HomePageSteps {
+public class BHomePageSteps {
 	private WebDriver driver=DriverFactory.getDriver();
 	private StartedPage sgPage=new StartedPage(driver);
 	private HomePage homePage=new HomePage(driver);

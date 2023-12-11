@@ -110,11 +110,23 @@
         </dependency>
 
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
-			<scope>test</scope>
-		</dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.7.1</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-cucumber-jvm</artifactId>
+    <version>2.20.1</version>
+</dependency>
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-junit5</artifactId>
+    <version>2.7.0</version>
+    <scope>test</scope>
+</dependency>
+
 
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -122,6 +134,7 @@
 			<version>${cucumber.version}</version>
 			<scope>test</scope>
 		</dependency>
+		
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
@@ -141,6 +154,9 @@
 			<artifactId>Test</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+
+
 		<dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-api</artifactId>
@@ -171,6 +187,7 @@
 
   </dependencies>
   <build>
+	  <pluginManagement>
 		<plugins>
 
 
@@ -190,20 +207,20 @@
 				<version>${maven.surefire.version}</version>
 				<!-- <configuration>
 					<includes>
-						<include>**/ParallelRun.java</include>
+						<include>**/MyTestRunner.java</include>
 					</includes>
 					<parallel>methods</parallel>
 					<threadCount>4</threadCount>
-					<useUnlimitedThreads>false</useUnlimitedThreads>
-				</configuration>-->
-			</plugin>
+					<useUnlimitedThreads>true</useUnlimitedThreads>
+				</configuration>--> 
+				</plugin>
 			
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-failsafe-plugin</artifactId>
     <version>3.1.2</version>
-    <!-- <scope>test</scope>-->
-    <executions>
+     <!-- <scope>test</scope>-->
+     <executions>
 		<execution>
 			<goals>
 				<goal>integration-test</goal>
@@ -213,16 +230,17 @@
 					<include>**/MyTestRunner.java</include>
 				</includes>
 				<parallel>methods</parallel>
-				<threadCount>4</threadCount>
-				<perCoreThreadCount>true</perCoreThreadCount>
+				<threadCount>2</threadCount>
+				<perCoreThreadCount>false</perCoreThreadCount>
 			</configuration>
 		</execution>
 	</executions>
-    </plugin>
+	    </plugin>
 
 			
 
 
 		</plugins>
+		</pluginManagement>
 	</build>
 </project>

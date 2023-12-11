@@ -5,9 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.driverFactory.DriverFactory;
 import com.pages.HomePage;
-import com.pages.RegistrationPage;
 import com.pages.SignInPage;
-import com.pages.StartedPage;
 import com.utilities.ConfigReader;
 
 import io.cucumber.java.en.Given;
@@ -15,7 +13,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 
-public class SignInSteps {
+public class DSignInSteps {
 	private WebDriver driver=DriverFactory.getDriver();
 	private HomePage homePage=new HomePage(driver);
 	private ConfigReader config=new ConfigReader();

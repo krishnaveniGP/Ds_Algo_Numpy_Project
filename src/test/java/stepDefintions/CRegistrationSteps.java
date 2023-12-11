@@ -23,7 +23,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class RegistrationSteps {
+public class CRegistrationSteps {
 	private WebDriver driver = DriverFactory.getDriver();
 	private HomePage homePage = new HomePage(driver);
 	private SignInPage loginPage = new SignInPage(driver);

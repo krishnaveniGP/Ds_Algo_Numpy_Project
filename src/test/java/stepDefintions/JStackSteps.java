@@ -1,5 +1,5 @@
 package stepDefintions;
 
-public class StackSteps {
+public class JStackSteps {
 
 }

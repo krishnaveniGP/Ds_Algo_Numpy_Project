@@ -9,25 +9,16 @@ import org.openqa.selenium.WebDriver;
 import com.driverFactory.DriverFactory;
 import com.pages.ArraysPage;
 import com.pages.HomePage;
-import com.pages.RegistrationPage;
-import com.pages.SignInPage;
-import com.pages.StartedPage;
-import com.utilities.ConfigReader;
 import com.utilities.ExcelReader;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class ArraysSteps {
+public class FArraysSteps {
 	WebDriver driver = DriverFactory.getDriver();
 
-	private StartedPage sgPage = new StartedPage(driver);
 	private HomePage homePage = new HomePage(driver);
-	private SignInPage loginPage = new SignInPage(driver);
-	private RegistrationPage registerPage = new RegistrationPage(driver);
-
-	private ConfigReader reader = new ConfigReader();
 	private ArraysPage arrPage=new ArraysPage(driver);
 	private String code;
 	private String actualresult;
