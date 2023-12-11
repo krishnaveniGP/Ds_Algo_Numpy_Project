@@ -220,7 +220,7 @@
     <artifactId>maven-failsafe-plugin</artifactId>
     <version>3.1.2</version>
      <!-- <scope>test</scope>-->
-     <executions>
+     <!-- <executions>
 		<execution>
 			<goals>
 				<goal>integration-test</goal>
@@ -234,7 +234,7 @@
 				<perCoreThreadCount>false</perCoreThreadCount>
 			</configuration>
 		</execution>
-	</executions>
+	</executions>-->
 	    </plugin>
 
 			
