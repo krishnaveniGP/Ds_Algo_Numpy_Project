@@ -17,7 +17,7 @@
 		<junit.version>4.13.1</junit.version>
 		<cucumber.version>7.11.2</cucumber.version>
 		<maven.compiler.version>3.10.1</maven.compiler.version>
-		<maven.surefire.version>2.22.2</maven.surefire.version>
+		<maven.surefire.version>3.1.2</maven.surefire.version>
 
 	
   </properties>
@@ -109,12 +109,12 @@
             <version>1.7.3</version>
         </dependency>
 
-		<dependency>
+		<!-- <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.7.1</version>
     <scope>test</scope>
-</dependency>
+</dependency>-->
 <!-- <dependency>
     <groupId>io.qameta.allure</groupId>
     <artifactId>allure-cucumber-jvm</artifactId>
@@ -205,7 +205,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
-				<configuration>
+				 <configuration>
+					
 					<includes>
 						<include>**/MyTestRunner.java</include>
 					</includes>
@@ -213,14 +214,17 @@
 					<threadCount>4</threadCount>
 					<useUnlimitedThreads>false</useUnlimitedThreads>
 				</configuration>
-				</plugin>
+								</plugin>
+				
+				
+				
 			
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-failsafe-plugin</artifactId>
     <version>3.1.2</version>
-     <!-- <scope>test</scope>-->
-     <!-- <executions>
+     <!--<scope>test</scope>-->
+      <executions>
 		<execution>
 			<goals>
 				<goal>integration-test</goal>
@@ -234,7 +238,7 @@
 				<perCoreThreadCount>false</perCoreThreadCount>
 			</configuration>
 		</execution>
-	</executions>-->
+	</executions>
 	    </plugin>
 
 			
